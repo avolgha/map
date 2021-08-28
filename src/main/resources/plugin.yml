@@ -1,0 +1,24 @@
+name: MariusAdminPlugin
+version: 1.0.0
+main: dev.marius.map.Plugin
+
+api-version: 1.17
+authors: [ Marius ]
+description: Marius Admin Plugin
+website: https://github.com/avolgha
+
+commands:
+  gamemode:
+    aliases:
+      - gm
+    description: Changes your gamemode
+  playergui:
+    description: Toggles PlayerGUI mode
+  sm:
+    description: Sends messages to the staff chat
+  tphere:
+    description: Teleports a player to you
+  tpto:
+    description: Teleports you to a player or to a coordinate
+  vanish:
+    description: Vanishs you to other players
