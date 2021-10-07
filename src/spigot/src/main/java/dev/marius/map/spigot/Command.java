@@ -1,4 +1,4 @@
-package dev.marius.map;
+package dev.marius.map.spigot;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandExecutor;

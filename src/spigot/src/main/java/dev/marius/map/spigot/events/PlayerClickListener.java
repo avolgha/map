@@ -1,7 +1,7 @@
-package dev.marius.map.events;
+package dev.marius.map.spigot.events;
 
-import dev.marius.map.Plugin;
-import dev.marius.map.util.ItemUtility;
+import dev.marius.map.spigot.Plugin;
+import dev.marius.map.spigot.util.ItemUtility;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -21,7 +21,6 @@ import org.jetbrains.annotations.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Objects;
 
 public class PlayerClickListener implements Listener {
     public static final List<Player> ACCESS_LIST = new ArrayList<>();

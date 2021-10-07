@@ -1,7 +1,7 @@
-package dev.marius.map.events;
+package dev.marius.map.spigot.events;
 
-import dev.marius.map.Plugin;
-import dev.marius.map.commands.VanishCommand;
+import dev.marius.map.spigot.Plugin;
+import dev.marius.map.spigot.commands.VanishCommand;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

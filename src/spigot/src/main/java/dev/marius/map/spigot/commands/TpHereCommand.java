@@ -1,7 +1,7 @@
-package dev.marius.map.commands;
+package dev.marius.map.spigot.commands;
 
-import dev.marius.map.Command;
-import dev.marius.map.Plugin;
+import dev.marius.map.spigot.Command;
+import dev.marius.map.spigot.Plugin;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.HumanEntity;

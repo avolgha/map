@@ -1,8 +1,8 @@
-package dev.marius.map.commands;
+package dev.marius.map.spigot.commands;
 
-import dev.marius.map.Command;
-import dev.marius.map.Plugin;
-import dev.marius.map.events.PlayerClickListener;
+import dev.marius.map.spigot.Command;
+import dev.marius.map.spigot.Plugin;
+import dev.marius.map.spigot.events.PlayerClickListener;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 

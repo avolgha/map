@@ -1,10 +1,10 @@
-package dev.marius.map;
+package dev.marius.map.spigot;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import dev.marius.map.commands.*;
-import dev.marius.map.events.PlayerClickListener;
-import dev.marius.map.events.VanishListener;
+import dev.marius.map.spigot.commands.*;
+import dev.marius.map.spigot.events.PlayerClickListener;
+import dev.marius.map.spigot.events.VanishListener;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.*;
 
@@ -14,7 +14,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public final class Plugin extends JavaPlugin {
-    static Plugin instance;
+    public static Plugin instance;
 
     private static final Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
@@ -36,15 +36,15 @@ public final class Plugin extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new VanishListener(this), this);
 
         for (Command command : new Command[] {
+                new AlertCommand(),
                 new GamemodeCommand(),
                 new PlayerguiCommand(),
+                new QuickGuiCommand(),
                 new StaffChatCommand(),
                 new TpHereCommand(),
                 new TpToCommand(),
                 new VanishCommand()
-        }) {
-            command.register(this);
-        }
+        }) command.register(this);
 
         getServer().getConsoleSender().sendMessage("[MAP] Enabled plugin");
     }

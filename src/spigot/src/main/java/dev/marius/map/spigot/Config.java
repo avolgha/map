@@ -1,4 +1,4 @@
-package dev.marius.map;
+package dev.marius.map.spigot;
 
 import org.bukkit.ChatColor;
 import org.bukkit.permissions.Permission;
@@ -16,6 +16,8 @@ public class Config {
     private String playerguiPermission = "map.playergui";
     private String vanishPermission = "map.vanish";
     private String vanishBypassPermission = "map.vanish.bypass";
+    private String alertPermission = "map.alert";
+    private String quickGuiPermission = "map.quickgui";
 
     public String getChatPrefix() {
         return ChatColor.translateAlternateColorCodes('&', chatPrefix);
@@ -59,5 +61,13 @@ public class Config {
 
     public Permission getVanishBypassPermission() {
         return new Permission(vanishBypassPermission);
+    }
+
+    public Permission getAlertPermission() {
+        return new Permission(alertPermission);
+    }
+
+    public Permission getQuickGuiPermission() {
+        return new Permission(quickGuiPermission);
     }
 }

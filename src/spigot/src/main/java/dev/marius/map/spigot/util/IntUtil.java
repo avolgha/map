@@ -1,4 +1,4 @@
-package dev.marius.map.util;
+package dev.marius.map.spigot.util;
 
 import org.jetbrains.annotations.*;
 
