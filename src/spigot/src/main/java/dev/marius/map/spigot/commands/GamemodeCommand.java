@@ -42,7 +42,7 @@ public class GamemodeCommand extends Command {
                 GameMode gamemode = fetchGamemode(args[0]);
                 if (gamemode != null) {
                     target.setGameMode(gamemode);
-                    player.sendMessage(prefix + ChatColor.GREEN + "You set the gamemode for " + ChatColor.GOLD + args[1]);
+                    player.sendMessage(prefix + ChatColor.GREEN + "You set the GameMode for " + ChatColor.GOLD + args[1]);
                 } else {
                     player.sendMessage(prefix + ChatColor.RED + "Error: Unknown GameMode");
                 }
